@@ -1,0 +1,107 @@
+<div ui-view="top" autoscroll="true">
+
+<!-- PHOTO CAROUSEL -->
+
+<section class="bike-photos" carousel-directive="{arrows: false, dots: true, cssEase: 'ease'}">
+  <div><img ng-src="{{bike.image1}}" /></div>
+  <div><img ng-src="{{bike.image2}}" /></div>
+</section>
+
+<!-- DETAILS -->
+
+<div class="details">
+
+  <h1>{{bike.model}}</h1>
+  <h3>${{bike.price}}</h3>
+
+</div>
+
+<br>
+
+<!-- ORDER -->
+
+<section class="cart">
+
+  <h4>Size</h4>
+
+    <div class="sizes">
+      <select ng-model="bike.order.frameSize">
+        <option value="15.5">15.5</option>
+        <option value="17.5">17.5</option>
+        <option value="18.5">18.5</option>
+        <option value="19.5">19.5</option>
+        <option value="21.5">21.5</option>
+      </select>
+    </div>
+
+  <h4 class="quantity-title">Quantity</h4>
+
+  <div class="quant-counter">
+    <input ng-model="bike.order.quantity" placeholder="Please enter number" type="number" min="1" value="1"></input>
+  </div>
+
+  <div ui-sref="cart" class="add-to-cart" ng-click="addToCart(bike)">
+    <p>ADD TO CART</p>
+    <div><div class="fa fa-shopping-cart"></div>
+  </div>
+
+
+</section>
+
+<!-- DESCRIPTION -->
+
+<section class="desc-contain">
+
+  <div class="catchphrase">
+    <h1>{{bike.catchphrase}}</h1>
+  </div>
+
+  <div class="bike-description">
+    <p>{{bike.description1}}</p> <br>
+    <p>{{bike.description2}}</p>
+  </div>
+
+</section>
+
+<!-- KEY FEATURES -->
+
+<section class="key-features-contain">
+  <h5>Key features</h5>
+  <ul>
+    <li>{{bike.frame}}</li>
+    <li>{{bike.tires}}</li>
+    <li>{{bike.suspension}}</li>
+    <li>{{bike.steering}}</li>
+  </ul>
+</section>
+
+
+<!-- VIDEO -->
+
+<div class="bike-video">
+  <iframe width="710" height="399" ng-src="{{bike.video}}" allowfullscreen></iframe>
+</div>
+
+<!-- FOOTER -->
+
+<section class="social-contain">
+  <div class="sign-up">
+    <h1>SIGN ME UP!</h1>
+    <p>Get special offers, exclusive product news, and event info straight to your inbox</p>
+    <a href="/auth"><button type="button" name="button">Join</button></a>
+  </div>
+
+  <div class="social-icons">
+    <div id="facebook"><a target="_blank" href="http://www.facebook.com/TrekBicycle" class="fa fa-facebook"></a></div>
+    <div id="twitter"><a target="_blank" href="https://twitter.com/trekbikes" class="fa fa-twitter"></a></div>
+    <div id="instagram"><a target="_blank" href="https://instagram.com/trekbikes/" class="fa fa-instagram"></a></div>
+    <div id="youtube"><a target="_blank" href="https://www.youtube.com/user/trekbikesusa" class="fa fa-youtube"></a></div>
+  </div>
+
+</section>
+
+<footer>
+  <p>© Taylor Griffith 2017</p>
+</footer>
+
+</section>

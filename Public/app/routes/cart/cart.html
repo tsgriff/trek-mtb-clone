@@ -1,0 +1,33 @@
+<div ui-view="top" autoscroll="true">
+
+<h3 class="cart-title">Shopping Cart</h3>
+
+<section class="cart-wrapper">
+
+  <img class="cart-photo" ng-src="{{cart.image1}}"></img>
+
+  <div class="cart-col">
+
+    <div class="cart-details-contain" ng-repeat="bike in cart">
+      <img class="cart-photo" ng-src="{{bike.image1}}"></img>
+      <h3>{{bike.model}}</h3>
+      <h3> {{bike.order.frameSize}}</h3>
+      <h3> {{bike.order.quantity}}</h3>
+      <h3> ${{bike.price}}</h3>
+      <h3>${{totalPrice}}</h3>
+    </div>
+
+  </div>
+
+  </section>
+
+<div class="checkout-contain">
+
+  <div ui-sref="#" class="checkout">
+    <p>PROCEED TO CHECKOUT</p>
+  </div>
+
+    <h3 class="reset-cart" ng-click="deleteCart()"><p>RESET CART</p></h3>
+</div>
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "name": "Personal-Project-Angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-sass": "^3.1.0",
+    "live-server": "^1.2.0",
+    "lodash": "^4.17.4",
+    "massive": "^2.6.1",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-auth0": "^0.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsgriff/Personal-Project-AngularJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsgriff/Personal-Project-AngularJS/issues"
+  },
+  "homepage": "https://github.com/tsgriff/Personal-Project-AngularJS#readme"
+}
