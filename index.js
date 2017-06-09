@@ -51,7 +51,7 @@ passport.deserializeUser(function(user, done) {
       done(null, user);
 });
 
-var userCtrl = require('./server/controllers/userCtrl')
+var userCtrl = require('./Server/controllers/userCtrl')
 
 app.get('/me', userCtrl.me);
 
