@@ -7,7 +7,8 @@ var paths = {
   jsSource: ['Public/app/app.js', 'Public/app/**/*.js'],
   cssSource: ['Public/app/**/*.sass'],
   viewsSource: ['Public/**/*.html'],
-  imagesSource: ['Public/images/**/*.jpg']
+  imagesSource: ['Public/images/**/*.jpg'],
+  photoSource: ['Photos/**/*.*']
 };
 
 gulp.task('js',function() {
@@ -34,11 +35,17 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./dist'))
 });
 
+gulp.task('photos', function() {
+  gulp.src(paths.photoSource)
+    .pipe(gulp.dest('./dist/Photos'))
+});
+
 gulp.task('watch', function() {
   gulp.watch(paths.jsSource, ['js']);
   gulp.watch(paths.cssSource, ['css']);
   gulp.watch(paths.imagesSource, ['images']);
   gulp.watch(paths.viewsSource, ['views']);
+  gulp.watch(paths.photoSource, ['photos']);
 });
 
-gulp.task('default', ['js', 'css', 'views', 'images', 'watch']);
+gulp.task('default', ['js', 'css', 'views', 'photos', 'images', 'watch']);
