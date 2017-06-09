@@ -1,0 +1,56 @@
+<div ui-view="top" autoscroll="true" class="ng-cloak">
+
+<section class="intro-vid">
+  <iframe frameborder="0" allowfullscreen="0" loop src="https://www.youtube.com/embed/69yA-F7yOiQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&cc_load_policy=0&enablejsapi=1&playlist=69yA-F7y0iQ&showinfo=0&modestbranding=1&disablekb=1"></iframe>
+</section>
+
+<div class="main-title">
+  <h1>Mountain bikes</h1>
+</div>
+
+<div class="links">
+    <div class="see-bikes" ng-click="scrollTo('display-bikes-col')"><a>SEE THE BIKES</a></div>
+  <div class="arrow-down">
+  <i class="fa fa-angle-down" ng-click="scrollTo('intro-text-contain')"></i>
+  </div>
+</div>
+
+<section class="main-container">
+
+  <section id="intro-text-contain">
+
+    <div class="intro-text">
+      <p>Trek is the world leader in mountain bike technology. No surprise that our mountain bikes are the most technologically advanced on the market. Here, innovations are not limited to only the highest-end MTB models. Every Trek mountain bike is loaded with features and details that will make any ride, on any trail, better.<p>
+    </div>
+
+  </section>
+
+  <div id="display-bikes-col" ng-repeat="item in info">
+      <a ui-sref="bike({id:item.id})"><div class="bike-title"><img ng-src="{{item.image1}}" alt="Bike Photo" /><p>{{item.model}} </br> <span>${{item.price}}</span></p></div></a>
+  </div>
+
+  <!-- FOOTER -->
+
+  <section class="social-contain">
+    <div class="sign-up">
+      <h1>SIGN ME UP!</h1>
+      <p>Get special offers, exclusive product news, and event info straight to your inbox</p>
+      <a href="/auth"><button type="button" name="button">Join</button></a>
+    </div>
+
+    <div class="social-icons">
+      <div id="facebook"><a target="_blank" href="http://www.facebook.com/TrekBicycle" class="fa fa-facebook"></a></div>
+      <div id="twitter"><a target="_blank" href="https://twitter.com/trekbikes" class="fa fa-twitter"></a></div>
+      <div id="instagram"><a target="_blank" href="https://instagram.com/trekbikes/" class="fa fa-instagram"></a></div>
+      <div id="youtube"><a target="_blank" href="https://www.youtube.com/user/trekbikesusa" class="fa fa-youtube"></a></div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© Taylor Griffith 2017</p>
+  </footer>
+
+  </section>
+
+</div>
