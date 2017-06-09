@@ -2,7 +2,7 @@ var express = require('express'),
     session = require('express-session'),
     bodyParser = require('body-parser'),
     massive = require("massive"),
-    config = require('./Server/config.js'),
+    config = require('./server_config.js'),
     passport = require('passport'),
     Auth0Strategy = require('passport-auth0');
 
@@ -83,6 +83,6 @@ app.delete('/api/cart', function(req, res) {
   res.status(200).json(req.session.cart);
 })
 
-app.listen(3000, function(){
-  console.log("Running on 3000");
+app.listen(80, function(){
+  console.log("Running on 80");
 });
