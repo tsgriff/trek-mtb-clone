@@ -1,14 +1,19 @@
-<div class="greeting">
-  <h1>Welcome, {{user.displayName}}!</h1>
-</div>
-
-<div class="button-contain"><a href="#!/#display-bikes-col">
-  <div class="button">
-    <p>Shop</p>
+<div class="profile-wrapper">
+  <div class="greeting">
+    <h1>Welcome, {{user.displayName}}!</h1>
   </div>
-</a>
-</div>
 
-<footer>
-  <p>© Taylor Griffith 2017</p>
-</footer>
+  <div class="shop-button-contain" ui-sref="home">
+    <div class="shop-button">
+      <p>Shop</p>
+    </div>
+  </div>
+
+  <div class="cart-button-contain" ui-sref="cart">
+    <div class="cart-button">
+      <p>My Cart</p>
+    </div>
+  </div>
+
+
+</div>

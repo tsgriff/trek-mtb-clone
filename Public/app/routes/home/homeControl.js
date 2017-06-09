@@ -1,7 +1,8 @@
 angular.module('app')
-  .controller('homeControl', function($scope, mainService, $state, $anchorScroll, $location) {
+  .controller('homeControl', function($http, $scope, mainService, $state, $anchorScroll, $location) {
 
       $scope.getHomeDetails = () => {
+
         mainService.getInfo().then((response) => {
           $scope.info = response.data;
         })
@@ -12,4 +13,6 @@ angular.module('app')
       $scope.scrollTo = (id) => {
         $location.hash(id);
       };
+
+
 });

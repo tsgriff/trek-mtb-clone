@@ -1,8 +1,8 @@
-<div ui-view="top" autoscroll="true">
+<div ui-view="top" autoscroll="true" class="ng-cloak">
 
 <!-- PHOTO CAROUSEL -->
 
-<section class="bike-photos" carousel-directive="{arrows: false, dots: true, cssEase: 'ease'}">
+<section class="bike-photos" carousel-directive="{arrows: false, dots: true, cssEase: 'ease'}" ng-cloak="true">
   <div><img ng-src="{{bike.image1}}" /></div>
   <div><img ng-src="{{bike.image2}}" /></div>
 </section>
@@ -13,7 +13,6 @@
 
   <h1>{{bike.model}}</h1>
   <h3>${{bike.price}}</h3>
-
 </div>
 
 <br>
@@ -105,3 +104,7 @@
 </footer>
 
 </section>
+
+    </div>
+
+</div>
