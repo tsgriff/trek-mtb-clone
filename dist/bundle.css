@@ -68,16 +68,21 @@
 .about-wrapper {
   text-align: center;
   padding-top: 15vh;
-  background: #FFFFFF;
-  padding: 10px 0px 10px 0px; }
+  background: #FFFFFF; }
   .about-wrapper div h2 {
     color: #333333;
     font-family: 'Roboto', sans-serif;
-    font-size: 40px; }
+    font-size: 40px;
+    padding-bottom: 5vh; }
   .about-wrapper .tech-list {
     color: #333333;
     font-family: 'Roboto', sans-serif;
     font-size: 24px; }
+    .about-wrapper .tech-list h3 {
+      padding-bottom: 5vh; }
+    .about-wrapper .tech-list ul li {
+      padding-top: 1vh;
+      padding-bottom: 1vh; }
 
 * {
   margin: 0;
