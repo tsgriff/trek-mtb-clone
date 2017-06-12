@@ -67,8 +67,9 @@
 
 .about-wrapper {
   text-align: center;
-  padding-top: 10vh;
-  background: #FFFFFF; }
+  padding-top: 15vh;
+  background: #FFFFFF;
+  padding: 10px 0px 10px 0px; }
   .about-wrapper div h2 {
     color: #333333;
     font-family: 'Roboto', sans-serif;
