@@ -27,9 +27,8 @@ passport.use(new Auth0Strategy({
     domain: config.auth_domain,
     clientID: config.auth_id,
     clientSecret: config.auth_secret,
-    callbackURL: 'http://104.131.142.54/auth/callback'
+    callbackURL: 'http://trek.tsgriffith.com/auth/callback'
 }, function(accessToken, refreshToken, extraParams, profile, done) {
-
     return done(null, profile);
 }));
 
