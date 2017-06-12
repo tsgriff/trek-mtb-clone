@@ -7,6 +7,11 @@ angular.module('app', ['ui.router'])
         controller: 'homeControl'
       })
 
+      .state('about', {
+        url: '/about',
+        templateUrl: './app/routes/about/about.html',
+      })
+
       .state('bike', {
         url: '/bike/:id',
         templateUrl: './app/routes/bike/bike.html',
@@ -20,7 +25,6 @@ angular.module('app', ['ui.router'])
         resolve: {
           user: ["mainService", function(mainService){
             return mainService.getCurrentUser().then(function(response){
-              console.log(response)
               return response;
             })
           }]
