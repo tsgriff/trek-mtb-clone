@@ -93,18 +93,6 @@ angular.module('app')
 
 }]);
 
-angular.module('app')
-  .directive('carouselDirective', ["$timeout", function($timeout) {
-    return {
-      restrict: 'A',
-      link: function(scope, element, attrs) {
-        $timeout(function () {
-          $(element).slick(scope.$eval(attrs.carouselDirective));
-        })
-      }
-    }
-  }])
-
 angular.module("app")
   .controller("bikeControl", ["$scope", "mainService", "$stateParams", function($scope, mainService, $stateParams) {
 
@@ -160,6 +148,19 @@ $scope.deleteCart = () => {
 }]);
 
 angular.module('app')
+  .controller('profileControl', ["mainService", "$scope", "user", function(mainService, $scope, user) {
+
+    $scope.getUserInfo = function() {
+      mainService.getCurrentUser().then(function(response) {
+        $scope.user = response;
+      })
+    };
+
+    $scope.getUserInfo();
+
+  }]);
+
+angular.module('app')
   .controller('homeControl', ["$http", "$scope", "mainService", "$state", "$anchorScroll", "$location", function($http, $scope, mainService, $state, $anchorScroll, $location) {
 
       $scope.getHomeDetails = () => {
@@ -179,14 +180,13 @@ angular.module('app')
 }]);
 
 angular.module('app')
-  .controller('profileControl', ["mainService", "$scope", "user", function(mainService, $scope, user) {
-
-    $scope.getUserInfo = function() {
-      mainService.getCurrentUser().then(function(response) {
-        $scope.user = response;
-      })
-    };
-
-    $scope.getUserInfo();
-
-  }]);
+  .directive('carouselDirective', ["$timeout", function($timeout) {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        $timeout(function () {
+          $(element).slick(scope.$eval(attrs.carouselDirective));
+        })
+      }
+    }
+  }])
