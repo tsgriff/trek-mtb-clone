@@ -1,4 +1,4 @@
-var express = require('express'),
+const express = require('express'),
     session = require('express-session'),
     bodyParser = require('body-parser'),
     massive = require("massive"),
@@ -6,16 +6,16 @@ var express = require('express'),
     passport = require('passport'),
     Auth0Strategy = require('passport-auth0');
 
-var massiveUri = config.MASSIVE_URI;
+const massiveUri = config.MASSIVE_URI;
 
-var db = massive.connectSync({
+const db = massive.connectSync({
     connectionString: massiveUri
   });
-var app = module.exports = express();
+const app = module.exports = express();
 app.set('db', db);
 
-var homeControl = require('./Server/controllers/homeControl.js');
-var bikeControl = require('./Server/controllers/bikeControl.js');
+const homeControl = require('./Server/controllers/homeControl.js');
+const bikeControl = require('./Server/controllers/bikeControl.js');
 
 app.use(express.static('dist'));
 app.use(bodyParser());
@@ -51,7 +51,7 @@ passport.deserializeUser(function(user, done) {
       done(null, user);
 });
 
-var userCtrl = require('./Server/controllers/userCtrl')
+const userCtrl = require('./Server/controllers/userCtrl')
 
 app.get('/me', userCtrl.me);
 
