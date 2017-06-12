@@ -141,7 +141,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-right: 35vw; } }
+      margin-right: 43vw; } }
   .cart .sizes select {
     width: 100px;
     height: 30px;
@@ -351,69 +351,6 @@ footer {
       font-size: 13px;
       text-align: center;
       margin-top: 20px; }
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-.profile-wrapper {
-  background: url("http://trek.scene7.com/is/image/TrekBicycleProducts/2017_FuelEx_Gallery1?wid=1920&hei=1080&fmt=jpg&qlt=50,1&op_usm=0,0,0,0&iccEmbed=0&cache=on,on") no-repeat;
-  background-size: cover;
-  height: 100vh; }
-  .profile-wrapper .greeting {
-    padding-top: 12vh;
-    text-align: center;
-    color: #e6e6e6;
-    font-family: 'Roboto', sans-serif;
-    padding-bottom: 10vh;
-    font-size: 36px;
-    margin-bottom: 10vh; }
-  .profile-wrapper .shop-button-contain {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .profile-wrapper .shop-button-contain .shop-button {
-      border-radius: 5%;
-      width: 125px;
-      height: 40px;
-      text-align: center;
-      padding-top: 10px;
-      border: none;
-      color: #292929;
-      background-color: #e6e6e6;
-      cursor: pointer;
-      transition-duration: 0.4s;
-      text-decoration: none;
-      letter-spacing: 1px;
-      font-size: 24px; }
-    .profile-wrapper .shop-button-contain .shop-button:hover {
-      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-      color: #e6e6e6;
-      background-color: #292929; }
-  .profile-wrapper .cart-button-contain {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .profile-wrapper .cart-button-contain .cart-button {
-      border-radius: 5%;
-      width: 125px;
-      height: 40px;
-      text-align: center;
-      padding-top: 10px;
-      border: none;
-      color: #292929;
-      background-color: #e6e6e6;
-      cursor: pointer;
-      transition-duration: 0.4s;
-      text-decoration: none;
-      letter-spacing: 1px;
-      margin-top: 20px;
-      font-size: 24px; }
-    .profile-wrapper .cart-button-contain .cart-button:hover {
-      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-      color: #e6e6e6;
-      background-color: #292929; }
 
 * {
   margin: 0;
@@ -634,3 +571,66 @@ footer {
     padding-bottom: 4vh;
     padding-left: 10vw;
     margin-left: -10%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+.profile-wrapper {
+  background: url("http://trek.scene7.com/is/image/TrekBicycleProducts/2017_FuelEx_Gallery1?wid=1920&hei=1080&fmt=jpg&qlt=50,1&op_usm=0,0,0,0&iccEmbed=0&cache=on,on") no-repeat;
+  background-size: cover;
+  height: 100vh; }
+  .profile-wrapper .greeting {
+    padding-top: 12vh;
+    text-align: center;
+    color: #e6e6e6;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10vh;
+    font-size: 36px;
+    margin-bottom: 10vh; }
+  .profile-wrapper .shop-button-contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .profile-wrapper .shop-button-contain .shop-button {
+      border-radius: 5%;
+      width: 125px;
+      height: 40px;
+      text-align: center;
+      padding-top: 10px;
+      border: none;
+      color: #292929;
+      background-color: #e6e6e6;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-size: 24px; }
+    .profile-wrapper .shop-button-contain .shop-button:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      color: #e6e6e6;
+      background-color: #292929; }
+  .profile-wrapper .cart-button-contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .profile-wrapper .cart-button-contain .cart-button {
+      border-radius: 5%;
+      width: 125px;
+      height: 40px;
+      text-align: center;
+      padding-top: 10px;
+      border: none;
+      color: #292929;
+      background-color: #e6e6e6;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      text-decoration: none;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      font-size: 24px; }
+    .profile-wrapper .cart-button-contain .cart-button:hover {
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      color: #e6e6e6;
+      background-color: #292929; }
