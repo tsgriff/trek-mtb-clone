@@ -82,6 +82,6 @@ app.delete('/api/cart', function(req, res) {
   res.status(200).json(req.session.cart);
 })
 
-app.listen(80, function(){
-  console.log("Running on 80");
+app.listen(3000, function(){
+  console.log("Running on 3000");
 });
